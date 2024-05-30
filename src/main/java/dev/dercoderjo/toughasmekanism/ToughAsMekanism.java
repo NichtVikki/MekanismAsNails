@@ -1,24 +1,13 @@
 package dev.dercoderjo.toughasmekanism;
 
 import com.mojang.logging.LogUtils;
-import dev.dercoderjo.toughasmekanism.registry.Items;
-import dev.dercoderjo.toughasmekanism.registry.Modules;
+import dev.dercoderjo.toughasmekanism.registry.TAMInventoryTabs;
+import dev.dercoderjo.toughasmekanism.registry.TAMItems;
+import dev.dercoderjo.toughasmekanism.registry.TAMModules;
 import mekanism.api.MekanismIMC;
-import net.minecraft.client.Minecraft;
-import net.minecraft.core.registries.Registries;
-import net.minecraft.nbt.CompoundTag;
-import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.*;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.material.MapColor;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
-import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -29,11 +18,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.RegistryObject;
 import org.slf4j.Logger;
-import toughasnails.api.potion.TANEffects;
 
 @Mod(ToughAsMekanism.MODID)
 public class ToughAsMekanism {
@@ -52,12 +37,15 @@ public class ToughAsMekanism {
 
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.SPEC);
 
-        Modules.MODULES.register(modEventBus);
-        Items.ITEMS.register(modEventBus);
+        TAMModules.MODULES.register(modEventBus);
+        TAMItems.ITEMS.register(modEventBus);
+        TAMInventoryTabs.TABS.register(modEventBus);
     }
 
     private void imcQueue(InterModEnqueueEvent event) {
-        MekanismIMC.addMekaSuitBodyarmorModules(Modules.THERMOREGULATOR_UNIT);
+        MekanismIMC.addMekaSuitHelmetModules(TAMModules.HYDRATION_UNIT);
+
+        MekanismIMC.addMekaSuitBodyarmorModules(TAMModules.THERMOREGULATOR_UNIT);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {

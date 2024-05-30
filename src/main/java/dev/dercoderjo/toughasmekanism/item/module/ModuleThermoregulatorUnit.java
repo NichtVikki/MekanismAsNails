@@ -15,7 +15,7 @@ public class ModuleThermoregulatorUnit implements ICustomModule<ModuleThermoregu
         IEnergyContainer energyContainer = module.getEnergyContainer();
         if (energyContainer != null && energyContainer.getEnergy().getValue() > 0) {
             player.addEffect(new MobEffectInstance(TANEffects.CLIMATE_CLEMENCY.get(), 1, 0, false, false, false));
-            module.useEnergy(player, FloatingLong.create(1000));
+            module.useEnergy(player, FloatingLong.create(Config.moduleThermoregulatorUnitUsage));
         }
     }
 }
