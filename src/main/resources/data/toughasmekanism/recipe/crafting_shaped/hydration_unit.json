@@ -1,19 +1,22 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "WRL",
+    "NWL",
     "RMR",
     "HHH"
   ],
   "key": {
+    "N": {
+      "item": "toughasnails:empty_netherite_canteen"
+    },
     "W": {
-      "item": "toughasnails:wool_chestplate"
+      "item": "toughasnails:water_purifier"
+    },
+    "L": {
+      "item": "toughasnails:empty_leather_canteen"
     },
     "R": {
       "item": "mekanism:alloy_reinforced"
-    },
-    "L": {
-      "item": "toughasnails:leaf_chestplate"
     },
     "M": {
       "item": "mekanism:module_base"
@@ -23,7 +26,7 @@
     }
   },
   "result": {
-    "item": "toughasmekanism:module_thermoregulator_unit",
+    "id": "toughasmekanism:module_hydration_unit",
     "count": 1
   }
 }
