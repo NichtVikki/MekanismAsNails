@@ -1,0 +1,193 @@
+---- Minecraft Crash Report ----
+// Uh... Did I do that?
+
+Time: 2024-11-14 23:11:36
+Description: Unexpected error
+
+java.lang.NoSuchFieldError: Class net.neoforged.neoforge.common.Tags$Items does not have member field 'net.minecraft.tags.TagKey TOOLS_SHEARS'
+	at TRANSFORMER/jade@15.0.4+neoforge/snownee.jade.util.CommonProxy.isShears(CommonProxy.java:208) ~[jade-15.0.4+neoforge.jar%23196!/:15.0.4+neoforge] {re:classloading}
+	at TRANSFORMER/jade@15.0.4+neoforge/snownee.jade.addon.harvest.HarvestToolProvider.getText(HarvestToolProvider.java:160) ~[jade-15.0.4+neoforge.jar%23196!/:15.0.4+neoforge] {re:classloading}
+	at TRANSFORMER/jade@15.0.4+neoforge/snownee.jade.addon.harvest.HarvestToolProvider.appendTooltip(HarvestToolProvider.java:121) ~[jade-15.0.4+neoforge.jar%23196!/:15.0.4+neoforge] {re:classloading}
+	at TRANSFORMER/jade@15.0.4+neoforge/snownee.jade.addon.harvest.HarvestToolProvider.appendTooltip(HarvestToolProvider.java:41) ~[jade-15.0.4+neoforge.jar%23196!/:15.0.4+neoforge] {re:classloading}
+	at TRANSFORMER/jade@15.0.4+neoforge/snownee.jade.impl.BlockAccessorClientHandler.gatherComponents(BlockAccessorClientHandler.java:93) ~[jade-15.0.4+neoforge.jar%23196!/:15.0.4+neoforge] {re:classloading}
+	at TRANSFORMER/jade@15.0.4+neoforge/snownee.jade.impl.BlockAccessorClientHandler.gatherComponents(BlockAccessorClientHandler.java:24) ~[jade-15.0.4+neoforge.jar%23196!/:15.0.4+neoforge] {re:classloading}
+	at TRANSFORMER/jade@15.0.4+neoforge/snownee.jade.overlay.WailaTickHandler.tickClient(WailaTickHandler.java:194) ~[jade-15.0.4+neoforge.jar%23196!/:15.0.4+neoforge] {re:classloading}
+	at TRANSFORMER/jade@15.0.4+neoforge/snownee.jade.util.ClientProxy.onClientTick(ClientProxy.java:176) ~[jade-15.0.4+neoforge.jar%23196!/:15.0.4+neoforge] {re:classloading}
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.ConsumerEventHandler.invoke(ConsumerEventHandler.java:26) ~[bus-8.0.1.jar%23147!/:?] {}
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.EventBus.post(EventBus.java:350) ~[bus-8.0.1.jar%23147!/:?] {}
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.EventBus.post(EventBus.java:315) ~[bus-8.0.1.jar%23147!/:?] {}
+	at TRANSFORMER/neoforge@21.0.143/net.neoforged.neoforge.client.ClientHooks.fireClientTickPost(ClientHooks.java:1069) ~[neoforge-21.0.143.jar%23190!/:?] {re:classloading,re:mixin}
+	at TRANSFORMER/minecraft@1.21/net.minecraft.client.Minecraft.tick(Minecraft.java:1927) ~[neoforge-21.0.143.jar%23189!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21/net.minecraft.client.Minecraft.runTick(Minecraft.java:1167) ~[neoforge-21.0.143.jar%23189!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21/net.minecraft.client.Minecraft.run(Minecraft.java:813) ~[neoforge-21.0.143.jar%23189!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21/net.minecraft.client.main.Main.main(Main.java:230) ~[neoforge-21.0.143.jar%23189!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?] {}
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.21/net.neoforged.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:136) ~[loader-4.0.21.jar%23143!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.21/net.neoforged.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:124) ~[loader-4.0.21.jar%23143!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.21/net.neoforged.fml.loading.targets.NeoForgeClientUserdevLaunchHandler.runService(NeoForgeClientUserdevLaunchHandler.java:23) ~[loader-4.0.21.jar%23143!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.21/net.neoforged.fml.loading.targets.CommonLaunchHandler.lambda$launchService$4(CommonLaunchHandler.java:118) ~[loader-4.0.21.jar%23143!/:4.0] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) [modlauncher-11.0.4.jar%23125!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) [modlauncher-11.0.4.jar%23125!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) [modlauncher-11.0.4.jar%23125!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.Launcher.run(Launcher.java:103) [modlauncher-11.0.4.jar%23125!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.Launcher.main(Launcher.java:74) [modlauncher-11.0.4.jar%23125!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) [modlauncher-11.0.4.jar%23125!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) [modlauncher-11.0.4.jar%23125!/:?] {}
+	at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.run(BootstrapLauncher.java:210) [bootstraplauncher-2.0.2.jar:?] {}
+	at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:69) [bootstraplauncher-2.0.2.jar:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at TRANSFORMER/jade@15.0.4+neoforge/snownee.jade.util.CommonProxy.isShears(CommonProxy.java:208) ~[jade-15.0.4+neoforge.jar%23196!/:15.0.4+neoforge] {re:classloading}
+	at TRANSFORMER/jade@15.0.4+neoforge/snownee.jade.addon.harvest.HarvestToolProvider.getText(HarvestToolProvider.java:160) ~[jade-15.0.4+neoforge.jar%23196!/:15.0.4+neoforge] {re:classloading}
+	at TRANSFORMER/jade@15.0.4+neoforge/snownee.jade.addon.harvest.HarvestToolProvider.appendTooltip(HarvestToolProvider.java:121) ~[jade-15.0.4+neoforge.jar%23196!/:15.0.4+neoforge] {re:classloading}
+	at TRANSFORMER/jade@15.0.4+neoforge/snownee.jade.addon.harvest.HarvestToolProvider.appendTooltip(HarvestToolProvider.java:41) ~[jade-15.0.4+neoforge.jar%23196!/:15.0.4+neoforge] {re:classloading}
+	at TRANSFORMER/jade@15.0.4+neoforge/snownee.jade.impl.BlockAccessorClientHandler.gatherComponents(BlockAccessorClientHandler.java:93) ~[jade-15.0.4+neoforge.jar%23196!/:15.0.4+neoforge] {re:classloading}
+	at TRANSFORMER/jade@15.0.4+neoforge/snownee.jade.impl.BlockAccessorClientHandler.gatherComponents(BlockAccessorClientHandler.java:24) ~[jade-15.0.4+neoforge.jar%23196!/:15.0.4+neoforge] {re:classloading}
+	at TRANSFORMER/jade@15.0.4+neoforge/snownee.jade.overlay.WailaTickHandler.tickClient(WailaTickHandler.java:194) ~[jade-15.0.4+neoforge.jar%23196!/:15.0.4+neoforge] {re:classloading}
+	at TRANSFORMER/jade@15.0.4+neoforge/snownee.jade.util.ClientProxy.onClientTick(ClientProxy.java:176) ~[jade-15.0.4+neoforge.jar%23196!/:15.0.4+neoforge] {re:classloading}
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.ConsumerEventHandler.invoke(ConsumerEventHandler.java:26) ~[bus-8.0.1.jar%23147!/:?] {}
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.EventBus.post(EventBus.java:350) ~[bus-8.0.1.jar%23147!/:?] {}
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.EventBus.post(EventBus.java:315) ~[bus-8.0.1.jar%23147!/:?] {}
+	at TRANSFORMER/neoforge@21.0.143/net.neoforged.neoforge.client.ClientHooks.fireClientTickPost(ClientHooks.java:1069) ~[neoforge-21.0.143.jar%23190!/:?] {re:classloading,re:mixin}
+-- Uptime --
+Details:
+	JVM uptime: 106.137s
+	Wall uptime: 93.224s
+	High-res time: 103.433s
+	Client ticks: 1676 ticks / 83.800s
+Stacktrace:
+	at TRANSFORMER/minecraft@1.21/net.minecraft.client.Minecraft.fillReport(Minecraft.java:2407) ~[neoforge-21.0.143.jar%23189!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21/net.minecraft.client.Minecraft.emergencySaveAndCrash(Minecraft.java:874) ~[neoforge-21.0.143.jar%23189!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21/net.minecraft.client.Minecraft.run(Minecraft.java:834) ~[neoforge-21.0.143.jar%23189!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21/net.minecraft.client.main.Main.main(Main.java:230) ~[neoforge-21.0.143.jar%23189!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?] {}
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.21/net.neoforged.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:136) ~[loader-4.0.21.jar%23143!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.21/net.neoforged.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:124) ~[loader-4.0.21.jar%23143!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.21/net.neoforged.fml.loading.targets.NeoForgeClientUserdevLaunchHandler.runService(NeoForgeClientUserdevLaunchHandler.java:23) ~[loader-4.0.21.jar%23143!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.21/net.neoforged.fml.loading.targets.CommonLaunchHandler.lambda$launchService$4(CommonLaunchHandler.java:118) ~[loader-4.0.21.jar%23143!/:4.0] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) [modlauncher-11.0.4.jar%23125!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) [modlauncher-11.0.4.jar%23125!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) [modlauncher-11.0.4.jar%23125!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.Launcher.run(Launcher.java:103) [modlauncher-11.0.4.jar%23125!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.Launcher.main(Launcher.java:74) [modlauncher-11.0.4.jar%23125!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) [modlauncher-11.0.4.jar%23125!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) [modlauncher-11.0.4.jar%23125!/:?] {}
+	at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.run(BootstrapLauncher.java:210) [bootstraplauncher-2.0.2.jar:?] {}
+	at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:69) [bootstraplauncher-2.0.2.jar:?] {}
+
+
+-- Affected level --
+Details:
+	All players: 1 total; [LocalPlayer['Dev'/25, l='ClientLevel', x=82.62, y=62.00, z=-7.61]]
+	Chunk stats: 961, 609
+	Level dimension: minecraft:overworld
+	Level spawn location: World: (80,62,-16), Section: (at 0,14,0 in 5,3,-1; chunk contains blocks 80,-64,-16 to 95,319,-1), Region: (0,-1; contains chunks 0,-32 to 31,-1, blocks 0,-64,-512 to 511,319,-1)
+	Level time: 1397 game time, 1397 day time
+	Server brand: neoforge
+	Server type: Integrated singleplayer server
+	Tracked entity count: 147
+
+-- Last reload --
+Details:
+	Reload number: 1
+	Reload reason: initial
+	Finished: Yes
+	Packs: vanilla, mod_resources, mod/emi, mod/mekanism, mod/glitchcore, mod/toughasnails, mod/jade, mod/neoforge, mod/mekanismasnails
+
+-- System Details --
+Details:
+	Minecraft Version: 1.21
+	Minecraft Version ID: 1.21
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 21.0.5, Amazon.com Inc.
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Amazon.com Inc.
+	Memory: 336555024 bytes (320 MiB) / 1210056704 bytes (1154 MiB) up to 4276092928 bytes (4078 MiB)
+	CPUs: 16
+	Processor Vendor: AuthenticAMD
+	Processor Name: AMD Ryzen 7 5800X 8-Core Processor             
+	Identifier: AuthenticAMD Family 25 Model 33 Stepping 2
+	Microarchitecture: Zen 3
+	Frequency (GHz): 3.80
+	Number of physical packages: 1
+	Number of physical CPUs: 8
+	Number of logical CPUs: 16
+	Graphics card #0 name: NVIDIA GeForce RTX 3060
+	Graphics card #0 vendor: NVIDIA
+	Graphics card #0 VRAM (MiB): 8192.00
+	Graphics card #0 deviceId: VideoController1
+	Graphics card #0 versionInfo: 32.0.15.6094
+	Memory slot #0 capacity (MiB): 8192.00
+	Memory slot #0 clockSpeed (GHz): 3.20
+	Memory slot #0 type: DDR4
+	Memory slot #1 capacity (MiB): 8192.00
+	Memory slot #1 clockSpeed (GHz): 3.20
+	Memory slot #1 type: DDR4
+	Virtual memory max (MiB): 33717.57
+	Virtual memory used (MiB): 26350.32
+	Swap memory total (MiB): 17408.00
+	Swap memory used (MiB): 2016.71
+	Space in storage for jna.tmpdir (MiB): <path not set>
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): <path not set>
+	Space in storage for io.netty.native.workdir (MiB): <path not set>
+	Space in storage for java.io.tmpdir (MiB): available: 45928.16, total: 487643.00
+	Space in storage for workdir (MiB): available: 177642.28, total: 244197.00
+	JVM Flags: 2 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump
+	Launched Version: 21.0.143
+	Backend library: LWJGL version 3.3.3+5
+	Backend API: NVIDIA GeForce RTX 3060/PCIe/SSE2 GL version 4.6.0 NVIDIA 560.94, NVIDIA Corporation
+	Window size: 1920x1009
+	GFLW Platform: win32
+	GL Caps: Using framebuffer using OpenGL 3.2
+	GL debug messages: 
+	Is Modded: Definitely; Client brand changed to 'neoforge'; Server brand changed to 'neoforge'
+	Universe: 400921fb54442d18
+	Type: Integrated Server (map_client.txt)
+	Graphics mode: fancy
+	Render Distance: 12/12 chunks
+	Resource Packs: vanilla, mod_resources, mod/emi (incompatible), mod/mekanism, mod/glitchcore (incompatible), mod/toughasnails (incompatible), mod/jade (incompatible), mod/neoforge, mod/mekanismasnails (incompatible)
+	Current Language: en_us
+	Locale: en_US
+	System encoding: Cp1252
+	File encoding: UTF-8
+	CPU: 16x AMD Ryzen 7 5800X 8-Core Processor 
+	Server Running: true
+	Player Count: 1 / 8; [ServerPlayer['Dev'/25, l='ServerLevel[New World]', x=82.62, y=62.00, z=-7.61]]
+	Active Data Packs: vanilla, mod_data, mod/emi (incompatible), mod/mekanism, mod/glitchcore (incompatible), mod/toughasnails (incompatible), mod/jade (incompatible), mod/neoforge, mod/mekanismasnails (incompatible)
+	Available Data Packs: bundle, trade_rebalance, vanilla, mod/emi (incompatible), mod/glitchcore (incompatible), mod/jade (incompatible), mod/mekanism, mod/mekanismasnails (incompatible), mod/neoforge, mod/toughasnails (incompatible), mod_data
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Stable
+	World Seed: 6639291380039818331
+	ModLauncher: 11.0.4+main.d2e20e43
+	ModLauncher launch target: forgeclientuserdev
+	ModLauncher services: 
+		sponge-mixin-0.14.0+mixin.0.8.6.jar mixin PLUGINSERVICE 
+		loader-4.0.21.jar slf4jfixer PLUGINSERVICE 
+		loader-4.0.21.jar runtime_enum_extender PLUGINSERVICE 
+		at-modlauncher-10.0.1.jar accesstransformer PLUGINSERVICE 
+		loader-4.0.21.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-11.0.4.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-11.0.4.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		javafml@4.0
+		lowcodefml@4.0
+		minecraft@4.0
+	Mod List: 
+		emi-1.1.10+1.21+neoforge.jar                      |EMI                           |emi                           |1.1.10+1.21+neoforge|Manifest: NOSIGNATURE
+		neoforge-21.0.143.jar                             |Minecraft                     |minecraft                     |1.21                |Manifest: a1:d4:5e:04:4f:d3:d6:e0:7b:37:97:cf:77:b0:de:ad:4a:47:ce:8c:96:49:5f:0a:cf:8c:ae:b2:6d:4b:8a:3f
+		mekanism-10.6.7.54.jar                            |Mekanism                      |mekanism                      |10.6.7              |Manifest: NOSIGNATURE
+		glitchcore-2.0.0.2-neoforge.jar                   |GlitchCore                    |glitchcore                    |2.0.0.2             |Manifest: NOSIGNATURE
+		tough-as-nails-10.0.0.5-neoforge.jar              |Tough As Nails                |toughasnails                  |10.0.0.5            |Manifest: NOSIGNATURE
+		jade-15.0.4+neoforge.jar                          |Jade                          |jade                          |15.0.4+neoforge     |Manifest: NOSIGNATURE
+		neoforge-21.0.143.jar                             |NeoForge                      |neoforge                      |21.0.143            |Manifest: NOSIGNATURE
+		main                                              |MekanismAsNails               |mekanismasnails               |1.21-1.0.0          |Manifest: NOSIGNATURE
+	Crash Report UUID: ac430865-7f63-483d-af7e-20264a0937cf
+	FML: 4.0.21
+	NeoForge: 21.0.143

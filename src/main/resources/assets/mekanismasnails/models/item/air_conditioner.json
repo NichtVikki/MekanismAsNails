@@ -1,0 +1,30 @@
+{
+  "parent": "mekanismasnails:block/air_conditioner",
+  "display": {
+    "thirdperson_righthand": {
+      "translation": [0, 7.75, 0]
+    },
+    "thirdperson_lefthand": {
+      "translation": [-14.25, 7.75, 0]
+    },
+    "firstperson_lefthand": {
+      "translation": [-15, 0, 0]
+    },
+    "ground": {
+      "translation": [7.75, 2.5, 0]
+    },
+    "gui": {
+      "rotation": [-180, 0, -180],
+      "translation": [-4.5, 0, 0],
+      "scale": [0.58984, 1, 1]
+    },
+    "head": {
+      "translation": [8.25, 14.5, 0]
+    },
+    "fixed": {
+      "rotation": [0, 0, -0.75],
+      "translation": [4.25, 0, -1],
+      "scale": [0.61328, 1, 1]
+    }
+  }
+}

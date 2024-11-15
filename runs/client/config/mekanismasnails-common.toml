@@ -1,0 +1,9 @@
+#How much energy the Thermoregulator unit uses per tick
+#Range: 0 ~ 1000
+moduleThermoregulatorUnitUsage = 100
+#How much energy the Hydration unit uses per tick
+#Range: 0 ~ 1000
+moduleHydrationUnitUsage = 50
+#How much thirst the Hydration unit gives per tick
+#Range: 0 ~ 20
+moduleHydrationUnitGivesThirst = 1

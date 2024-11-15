@@ -1,0 +1,6 @@
+{
+  "module.mekanismasnails.thermoregulator_unit": "Thermoregulatoreinheit",
+  "description.mekanismasnails.thermoregulator_unit": "Reguliert die Temperatur deines Körpers",
+  "module.mekanismasnails.hydration_unit": "Hydratationseinheit",
+  "description.mekanismasnails.hydration_unit": "Hält deinen Körper hydriert"
+}

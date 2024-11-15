@@ -1,6 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "toughasmekanism:item/module_thermoregulator_unit"
-  }
-}
